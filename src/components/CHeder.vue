@@ -5,7 +5,7 @@
       <div class="logo-container">
         <a href="/" class="logo-link">
           <div class="logo-glow"></div>
-          <img src="/images/photo_2026-08-31_23-15-56.jpg" alt="COFFICH Logo" class="logo-img" />
+          <img src="/images/photo_2026-08-31_23-15-56.jpg" alt="Coffich Bukhara — кофейня в Бухаре" class="logo-img" />
           <span class="logo-text">COFFICH</span>
         </a>
       </div>

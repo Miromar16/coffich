@@ -12,9 +12,14 @@
           
           <div class="text-group">
             <span class="brand-tag animate-item tag-delay">{{ slide.tag }}</span>
-            <h1 class="main-title animate-item title-delay">
-              {{ slide.titleStart }} <br/> <span class="highlight">{{ slide.titleEnd }}</span>
-            </h1>
+            <component
+   :is="index === 0 ? 'h1' : 'h2'"
+  class="main-title animate-item title-delay"
+>
+  {{ slide.titleStart }}
+  <br>
+  <span class="highlight">{{ slide.titleEnd }}</span>
+</component>
             <p class="description animate-item desc-delay">{{ slide.description }}</p>
             
             <div class="btn-container animate-item btn-delay">
@@ -57,14 +62,14 @@ import { ref, onMounted, onUnmounted } from 'vue';
 
 const slides = ref([
   {
-    tag: 'НОВЫЙ ДЕНЬ',
-    titleStart: 'Утренний',
-    titleEnd: 'Заряд',
-    description: 'Просыпайтесь с ароматом настоящего кофе. Начните свой день с идеального вкуса.',
-    buttonText: 'Меню',
-    bgColor: '#1D4032',
-    mainImageUrl: '/images/Без названия (1).png', 
-    secondaryImageUrl: '/images/coffe.png'
+   tag: 'COFFICH BUKHARA',
+   titleStart: 'Coffich',
+   titleEnd: 'Кофейня в Бухаре',
+   description: 'Coffich — современная кофейня в Бухаре. Авторский кофе, десерты и уютная атмосфера.',
+   buttonText: 'Меню',
+   bgColor: '#1D4032',
+   mainImageUrl: '/images/Без названия (1).png', 
+   secondaryImageUrl: '/images/coffe.png'
   },
   {
     tag: 'УЮТ',
